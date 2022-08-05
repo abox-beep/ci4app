@@ -11,7 +11,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Sampul</th>
-                        <th scope="col">judul</th>
+                        <th scope="col">Judul</th>
                         <th scope="col">Aksi</th>
                     </tr>
                 </thead>
