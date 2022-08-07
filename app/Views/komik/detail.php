@@ -14,8 +14,14 @@
                         <div class="card-body">
                             <h5 class="card-title"><?= $komik['judul']; ?></h5>
                             <p class="card-text"><b>Penulis : </b><?= $komik['penulis']; ?></p>
-                            <p class="card-text"><b>Penerbit : </b><?= $komik['penerbit']; ?></p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <p class="card-text"><small class="text-muted"><b>Penerbit : </b><?= $komik['penerbit']; ?></small></p>
+
+                            <a href="" class="btn btn-warning">Edit</a>
+                            <a href="/komik/delete/<?= $komik['slug']; ?>" class="btn btn-danger">Delete</a>
+
+                            <br><br>
+                            <a href="/komik">Kembali ke daftar komik</a>
+
                         </div>
                     </div>
                 </div>

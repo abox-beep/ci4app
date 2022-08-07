@@ -8,6 +8,7 @@ class KomikModel extends Model
 {
     protected $table = 'komik';
     protected $useTimestamps = true;
+    protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
 
     public function getKomik($slug = false)
     {
@@ -16,5 +17,10 @@ class KomikModel extends Model
         }
 
         return $this->where(['slug' => $slug])->first();
+    }
+
+    public function deleteKomik($slug)
+    {
+        $this->where(['slug' => $slug])->delete();
     }
 }
