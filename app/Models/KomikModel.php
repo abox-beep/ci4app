@@ -18,9 +18,4 @@ class KomikModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
-
-    public function deleteKomik($slug)
-    {
-        $this->where(['slug' => $slug])->delete();
-    }
 }
