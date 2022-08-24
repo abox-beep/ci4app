@@ -18,6 +18,21 @@
     <?= $this->renderSection('content'); ?>
 
     <script src="/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script>
+        function previewImg() {
+
+            const sampul = document.querySelector('#sampul');
+            const imgPreview = document.querySelector('.img-preview');
+
+            const fileSampul = new FileReader();
+            fileSampul.readAsDataURL(sampul.files[0]);
+
+            fileSampul.onload = function(e) {
+                imgPreview.src = e.target.result;
+            }
+        }
+    </script>
 </body>
 
 </html>
