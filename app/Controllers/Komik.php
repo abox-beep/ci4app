@@ -15,8 +15,6 @@ class Komik extends BaseController
 
     public function index()
     {
-        // $komik = $this->komikModel->findAll();
-
         $data = [
             'title' => ' Daftar Komik',
             'komik' => $this->komikModel->getKomik()
