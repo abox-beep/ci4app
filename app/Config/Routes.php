@@ -46,6 +46,8 @@ $routes->get('/komik/edit/(:any)', 'Komik::edit/$1');
 $routes->post('komik/update/(:num)', 'Komik::update/$1');
 $routes->delete('/komik/(:num)', 'Komik::delete/$1');
 $routes->get('/komik/(:any)', 'Komik::detail/$1');
+$routes->get('/orang', 'Orang::index');
+$routes->post('/orang', 'Orang::index');
 
 
 

@@ -11,6 +11,7 @@
                     <a class="nav-link <?= ($title == 'About | Sultoni Rahman') ? 'active' : '' ?>" href="/pages/about">About</a>
                     <a class="nav-link <?= ($title == 'Contact Us') ? 'active' : '' ?>" href="/pages/contact">Contact</a>
                     <a class="nav-link <?= ($title == 'Daftar Komik') ? 'active' : '' ?>" href="/komik">Komik</a>
+                    <a class="nav-link <?= ($title == 'Daftar Orang') ? 'active' : '' ?>" href="/orang">Orang</a>
                 </div>
             </div>
         </div>
